@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>nlog</string>
+	</array>
+	<key>name</key>
+	<string>HIVE Log Files</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Hive System line</string>
+			<key>match</key>
+			<string>^.*\[[S]\].*</string>
+			<key>name</key>
+			<string>hive.log.system constant.numeric</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Hive Debug line</string>
+			<key>match</key>
+			<string>^.*\[[D]\].*</string>
+			<key>name</key>
+			<string>hive.log.debug storage.type</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Hive Info line</string>
+			<key>match</key>
+			<string>^.*\[[I]\].*</string>
+			<key>name</key>
+			<string>hive.log.info</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Hive Alert line</string>
+			<key>match</key>
+			<string>^.*\[[A]\].*</string>
+			<key>name</key>
+			<string>hive.log.alert entity.name.function</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Hive Warning line</string>
+			<key>match</key>
+			<string>^.*\[[W]\].*</string>
+			<key>name</key>
+			<string>hive.log.warning string.quoted</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Hive Error line</string>
+			<key>match</key>
+			<string>^.*\[[!]\].*</string>
+			<key>name</key>
+			<string>hive.log.error keyword.control</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Hive Fatal line</string>
+			<key>match</key>
+			<string>^.*\[[#]\].*</string>
+			<key>name</key>
+			<string>hive.log.fatal invalid</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>text.hive</string>
+	<key>uuid</key>
+	<string>6034d31d-d328-4468-90e6-640719e44c86</string>
+</dict>
+</plist>
