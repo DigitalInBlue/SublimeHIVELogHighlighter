@@ -1,0 +1,7 @@
+[
+	{ "keys": ["ctrl+enter"], "command": "hive_open_file", "context":
+		[			
+			{ "key": "selector", "operator": "equal", "operand": "hive" }
+		]
+	}
+]

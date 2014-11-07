@@ -1,0 +1,50 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: HIVE Log Files
+scopeName: text.hive
+fileTypes: [nlog]
+uuid: 6034d31d-d328-4468-90e6-640719e44c86
+
+patterns:
+- comment: Hive System line
+  name: hive.log.system constant.numeric
+  match: ^.*\[[S]\]\s+([^\(\)]+\([0-9]+\)).*
+  captures:
+    '1': {name: hive.log.file}
+
+- comment: Hive Debug line
+  name: hive.log.debug storage.type  
+  match: ^.*\[[D]\]\s+([^\(\)]+\([0-9]+\)).*
+  captures:
+    '1': {name: hive.log.file}  
+
+- comment: Hive Info line
+  name: hive.log.info  
+  match: ^.*\[[I]\]\s+([^\(\)]+\([0-9]+\)).*
+  captures:
+    '1': {name: hive.log.file}  
+
+- comment: Hive Alert line
+  name: hive.log.alert entity.name.function
+  match: ^.*\[[A]\]\s+([^\(\)]+\([0-9]+\)).*
+  captures:
+    '1': {name: hive.log.file}
+
+- comment: Hive Warning line
+  name: hive.log.warning string.quoted
+  match: ^.*\[[W]\]\s+([^\(\)]+\([0-9]+\)).*
+  captures:
+    '1': {name: hive.log.file}
+
+- comment: Hive Error line
+  name: hive.log.error keyword.control
+  match: ^.*\[[!]\]\s+([^\(\)]+\([0-9]+\)).*
+  captures:
+    '1': {name: hive.log.file}
+
+- comment: Hive Fatal line
+  name: hive.log.fatal invalid
+  match: ^.*\[[#]\]\s+([^\(\)]+\([0-9]+\)).*
+  captures:
+    '1': {name: hive.log.file}  
+...
