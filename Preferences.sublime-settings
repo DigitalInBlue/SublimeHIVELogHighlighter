@@ -1,0 +1,5 @@
+{
+    // This setups additional key press triggers that trigger the autcomplete feature
+    // of Sublime to called when processing XML files.
+    "auto_complete_triggers": [{"selector": "text.xml", "characters": ":<= "}]
+}

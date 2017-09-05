@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[<param name="$1" value="$2"/>$0]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>param</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>text.xml</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>HIVE XML param snippet</description>
+</snippet>

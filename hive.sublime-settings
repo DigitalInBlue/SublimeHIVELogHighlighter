@@ -1,0 +1,11 @@
+{
+    // This is the binary for the HIVE API Query tool that is needed to use the
+    // HIVE autocomplete
+    "hive_api_query" : "HiveAPIQuery",
+
+    // When enabled this will cause all other autocomplete hints to be hidden if the
+    // HIVE autcomplete provides any matches
+    "inhibit_other_completions" : true,
+
+    "sublime_auto_complete": true
+}
