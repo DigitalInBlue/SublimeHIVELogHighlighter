@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+<object type="$1"$2>
+	$0
+</object>]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>object</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>text.xml</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>HIVE XML param snippet</description>
+</snippet>
