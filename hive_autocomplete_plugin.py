@@ -11,8 +11,8 @@
 #  (for optimization purposes)
 
 import sublime, sublime_plugin
-from Hive_plugins.Module_DataDictionary import *
-from Hive_plugins.Module_XMLTagIterator import *
+from .Module_DataDictionary import *
+from .Module_XMLTagIterator import *
 
 ## Dictionary containing mappings of objects to parameters and
 #  mapping of elements to subelements and attributes.
@@ -21,9 +21,6 @@ DATA_DICTIONARY = None #cannot initialize dictionary at plugin load time
 
 #Option names and default values
 settings_file = 'hive.sublime-settings'
-
-
-
 
 ##the sublime selector that autocompletion should
 #occur in. text.xml is for xml files
